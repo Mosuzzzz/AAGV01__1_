@@ -448,11 +448,11 @@ void turnLeft() {
 
   digitalWrite(IN2, LOW);
 
-  // มอเตอร์ซ้ายเดินหน้า
+  // หยุดมอเตอร์ซ้าย
 
   digitalWrite(IN3, LOW);
 
-  digitalWrite(IN4, HIGH);
+  digitalWrite(IN4, LOW);
 
   analogWrite(ENA, BASE_SPEED);
 
@@ -482,9 +482,9 @@ void turnLeft() {
 
 void turnRight() {
 
-  // มอเตอร์ขวาเดินหน้า
+  // หยุดมอเตอร์ขวา
 
-  digitalWrite(IN1, HIGH);
+  digitalWrite(IN1, LOW);
 
   digitalWrite(IN2, LOW);
 
